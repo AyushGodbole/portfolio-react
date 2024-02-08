@@ -1,7 +1,9 @@
+import Dashboard from "./Pages/Dashboard.jsx"
+
 function App() {
 
   return (
-    <p className=" text-green-500">Hello</p>
+    <Dashboard/>
   )
 }
 
