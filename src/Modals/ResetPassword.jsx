@@ -1,6 +1,5 @@
-import FormTemplate from "./FormTemplate";
-
 function ResetPassword(){
+
     return(
         <form className="px-6 pt-2 pb-4">
             <div className=" flex flex-col gap-2">
@@ -25,6 +24,7 @@ function ResetPassword(){
 			    >
 			        Reset Password
 			    </button>
+
             </div>
 
 			

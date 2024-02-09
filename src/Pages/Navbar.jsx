@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useSelector , useDispatch } from 'react-redux';
 import {Link} from 'react-router-dom';
 import {click} from '../Redux/Slices/Authslice.js'
@@ -6,7 +5,7 @@ import {click} from '../Redux/Slices/Authslice.js'
 function Navbar(){
 
     const dispatch = useDispatch();
-    const {btnClick} = useSelector((state)=>state?.auth);
+    const currentType = useSelector((state)=>state?.auth?.type); 
 
     // const [isLoggedIn,setIsLoggedIn] = useState(isLoggedIn);
 
