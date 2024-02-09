@@ -1,9 +1,20 @@
-import Dashboard from "./Pages/Dashboard.jsx"
+import SignUp from "./Modals/SignUp.jsx";
+import Dashboard from "./Pages/Dashboard.jsx";
+import {Route, Routes} from 'react-router-dom'
+
 
 function App() {
 
   return (
-    <Dashboard/>
+    // <Dashboard/>
+    <Routes>
+
+
+    <Route path="/" element={<Dashboard/>}/>
+
+    {/* <Route path="/register" element={<SignUp />}/> */}
+
+    </Routes>
   )
 }
 
