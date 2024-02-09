@@ -1,6 +1,7 @@
 import SignUp from "./Modals/SignUp.jsx";
 import Dashboard from "./Pages/Dashboard.jsx";
 import {Route, Routes} from 'react-router-dom'
+import HomePage from "./Pages/HomePage.jsx";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
 
     <Route path="/" element={<Dashboard/>}/>
 
-    {/* <Route path="/register" element={<SignUp />}/> */}
+    <Route path="/user" element={<HomePage />}/>
 
     </Routes>
   )

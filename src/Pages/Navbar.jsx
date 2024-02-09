@@ -12,6 +12,7 @@ function Navbar(){
     const handleClick= (value)=>{
         dispatch(click({value}));
         // console.log('type',btnClick)
+        // continue from 47:30
 
     }
 

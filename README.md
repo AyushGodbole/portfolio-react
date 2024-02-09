@@ -1,17 +1,17 @@
-# LMS Front-End
+# Leetclone
 
 ### setup instructions
 
 1. clone the project
 
 ```
-    git clone https://github.com/AyushGodbole/lms_frontEnd.git
+    git clone https://github.com/AyushGodbole/Leetclone.git
 
 ```
 2. Move into the directory
 
 ```
-    cd lms-frontent
+    cd FrontEnd
 
 ```
 
