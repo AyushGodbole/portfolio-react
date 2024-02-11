@@ -1,4 +1,5 @@
 // import {Link} from 'react-router-dom';
+import { useState } from 'react';
 import '../../src//index.css';
 import {
     AiFillStar,
@@ -14,8 +15,23 @@ import {CgGitFork , CgFileDocument} from 'react-icons/cg'
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 function Navbar(){
+
+    // navbar scrolled background
+    const [scroll,setSroll] = useState(false);
+
+    const scrolled = ()=>{
+        if(window.scrollY>=20){
+            setSroll(true);
+        }
+        else{
+            setSroll(false);
+        }
+    }
+
+    window.addEventListener('scroll', scrolled);
+
     return (
-        <nav className='navbar bg-transparent flex justify-between px-32 w-full bg-fixed fixed'>
+        <nav className={scroll ? 'navbar-scroll bg-transparent top-0 flex justify-between px-32 py-5 w-full bg-fixed fixed' : 'navbar bg-transparent py-5 flex top-0 justify-between px-32 w-full bg-fixed fixed'}>
             <Link to={'/'} spy={true} smooth={true} offset={50} duration={500} className=' text-2xl'>AG |</Link>
             <ul className='list flex items-center justify-between w-[46%] text-[21px]'>
                 <li>

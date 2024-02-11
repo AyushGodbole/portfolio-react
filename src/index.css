@@ -23,17 +23,17 @@ html {
 /* custom scrollbar */
 
 ::-webkit-scrollbar{
-  width: 0.4rem;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track{
-  background-color: rgb(5 1 32 / 58%);
+  background: #2d1950;
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color:rgb(15 0 128 / 58%);
+  background:rgb(58 46 145 / 96%);
   border:rgb(15 0 128 / 58%);
-  border-radius:9px;
+  border-radius:12px;
   background-clip:content-box;
 }
 
@@ -68,9 +68,12 @@ body{
 
 /* navbar */
 
-/* .navbar{
-  background-color:transparent;
-} */
+.navbar-scroll {
+  background-color: #1b1a2ea9;
+  transition: all 0.3s ease-out 0s ;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) ;
+  backdrop-filter: blur(15px) ;
+}
 
 
 .tabs{
