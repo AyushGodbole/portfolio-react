@@ -1,3 +1,95 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
+
+  --imp-text-color: #c770f0;
+}
+
+
+/* custom scrollbar */
+
+::-webkit-scrollbar{
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgb(5 1 32 / 58%);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color:rgb(15 0 128 / 58%);
+  border:rgb(15 0 128 / 58%);
+  border-radius:9px;
+  background-clip:content-box;
+}
+
+
+body{
+    /* background-image: linear-gradient(to left, rgb(27,20,41), rgb(20,15,35)); */
+    /* background-image: linear-gradient(to left, rgb(4, 19, 64), rgb(13, 3, 44)); */
+    /* font-family: Raleway,serif !important;
+    margin:0;
+    padding:0; */
+
+    background-image:linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+
+    margin: 0;
+    font-family: "Raleway", serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+  /* background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35)); */
+}
+
+.page1 {
+  /* position: relative; */
+  background-image: linear-gradient(to bottom left, rgba(4, 4, 4, 0.68), rgba(10, 4, 43, 0.86)), url(/home-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+  max-height:720px;
+}
+
+
+/* navbar */
+
+/* .navbar{
+  background-color:transparent;
+} */
+
+
+.tabs{
+  display:flex;
+  align-items:center;
+  justify-content:between;
+  gap:5px;
+}
+
+
+/* about section */
+.left-about span{
+  color:#4444ef;
+}
+
+/* know section */
+.know-section{
+  background-image: linear-gradient(to bottom, rgb(21, 10, 35), rgb(20 15 35));
+}
+.know-section span{
+  color:#4444ef;
+}

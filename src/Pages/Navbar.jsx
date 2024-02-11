@@ -1,31 +1,59 @@
-import { useSelector , useDispatch } from 'react-redux';
-import {Link} from 'react-router-dom';
-import {click} from '../Redux/Slices/Authslice.js'
+// import {Link} from 'react-router-dom';
+import '../../src//index.css';
+import {
+    AiFillStar,
+    AiOutlineHome,
+    AiOutlineFundProjectionScreen,
+    AiOutlineUser,
+    AiFillBell,
+  } from "react-icons/ai";
+
+import {CgGitFork , CgFileDocument} from 'react-icons/cg'
+// import { Link } from 'react-scroll';
+
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 function Navbar(){
-
-    const dispatch = useDispatch();
-    const currentType = useSelector((state)=>state?.auth?.type); 
-
-    // const [isLoggedIn,setIsLoggedIn] = useState(isLoggedIn);
-
-    const handleClick= (value)=>{
-        dispatch(click({value}));
-        // console.log('type',btnClick)
-        // continue from 47:30
-
-    }
-
-    return(
-        <div className=' flex items-center justify-between sm:px-12 md:px-24 px-2'>
-            <Link to='/' className=' flex items-center justify-center'>
-                <img src="logo.png" alt="leetclone" className=' relative right-10 h-[16vh]'/>
-            </Link>
-
-            <div className=' flex items-center'>
-                <button onClick={()=>handleClick('register')} className=' bg-brand-orange text-white px-2 py-1 sm:px-4 rounded-md outline-none text-sm font-medium hover:bg-white hover:outline-none hover:text-brand-orange hover:border-2 hover:border-brand-orange border-2 border-transparent transition-all duration-300 ease-in-out'>Signup</button>
-            </div>
-        </div>
+    return (
+        <nav className='navbar bg-transparent flex justify-between px-32 w-full bg-fixed fixed'>
+            <Link to={'/'} spy={true} smooth={true} offset={50} duration={500} className=' text-2xl'>AG |</Link>
+            <ul className='list flex items-center justify-between w-[46%] text-[21px]'>
+                <li>
+                    <div className='tabs'>
+                        <AiOutlineHome/>
+                        <Link to="home" spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
+                    </div>
+                </li>
+                <li>
+                    <div className='tabs'>
+                        <AiOutlineUser/>
+                        <Link to="about" spy={true} smooth={true} offset={-100} duration={500}>About</Link>
+                    </div>
+                </li>
+                <li>
+                    <div className='tabs'>
+                        <AiOutlineFundProjectionScreen/>
+                        <Link to={'projects'} spy={true} smooth={true} offset={-100} duration={500}>Projects</Link>
+                    </div>
+                </li>
+                <li>
+                    <div className='tabs'>
+                        <CgFileDocument/>
+                        <Link to={'resume'} spy={true} smooth={true} offset={-100} duration={500}>Resume</Link>
+                    </div>
+                </li>
+                <li>
+                <button class='git-btn border bg-[#1f1f35] border-white py-1 px-4 rounded-md hover:bg-purple-800'>
+                    <a href="www.google.com" target='_blank'>
+                        <div className=' flex'>
+                            <CgGitFork/>
+                            <AiFillStar/>
+                        </div>
+                    </a>
+                </button>
+                </li>
+            </ul>
+        </nav>
     )
 }
 
