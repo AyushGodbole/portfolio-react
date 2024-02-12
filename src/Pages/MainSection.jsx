@@ -7,7 +7,7 @@ function MainSection(){
             <section className="left-part text-3xl text-white flex flex-col gap-5 tracking-wider">
                 {/* Hi there ayush godbole here <span className="text-[#4444ef] font-semibold">AYUSH</span> */}
                 <h1 className=" text-5xl">
-                    Hi There! 👋🏻
+                    Hi There! <span className='hand-wave'>👋🏻</span>
                 </h1>
                 <p className=" text-4xl">I'M <span className="text-[#4444ef] font-semibold">Ayush Godbole</span>
                 </p>

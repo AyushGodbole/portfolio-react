@@ -47,6 +47,7 @@ body{
     box-sizing: border-box;
 }
 
+/* home page css */
 .page1 {
   background-image: linear-gradient(to bottom left, rgba(4, 4, 4, 0.68), rgba(10, 4, 43, 0.86)), url(/home-bg.jpg);
   background-position: top center;
@@ -56,6 +57,41 @@ body{
   max-height:720px;
 }
 
+/* hand wave css */
+.hand-wave {
+  animation-name: wave-hand; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.9s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /*Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-hand {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 /* navbar */
 
