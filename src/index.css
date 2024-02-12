@@ -150,3 +150,110 @@ body{
   transform: translate(.4rem);
   margin-top: 1rem;
 }
+
+
+/* media query */
+@media screen and (max-width: 600px){
+  .main-section{
+    padding-top:92px;
+    padding-left:0;
+    padding-right:0;
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .right-part .code{
+    height:15rem;
+  }
+
+  .page1{
+    max-height: 650px;
+  }
+
+  .left-part{
+    width: 72%;
+  padding-top: 40px;
+  }
+
+  .left-part .head{
+    font-size:26px;
+  }
+
+  .left-part .name{
+    font-size:24px;
+  }
+
+  .left-part .Typewriter{
+    font-size:26px;
+  }
+
+
+  /* about css */
+  .about{
+    padding-left:0;
+    padding-right:0;
+    display:flex;
+    flex-direction:column;
+    font-size:18px;
+    gap:4.5rem;
+    padding-top:38px;
+    padding-bottom:38px;
+  }
+
+  .about .head{
+    font-size: 26px;
+  }
+
+  .about .info{
+    padding-left: 46px;
+  padding-right: 46px;
+  }
+
+  .about .info p{
+    font-size:22px;
+  }
+
+  .about .right-about{
+    width:100%;
+  }
+
+  .about .right-about .boy{
+    height:336px;
+  }
+
+  /* know section */
+  .know-section{
+    padding-left:0;
+    padding-right:0;
+    display:flex;
+    flex-direction:column;
+    font-size:18px;
+    gap:4.5rem;
+    padding-top:38px;
+    padding-bottom:38px;
+  }
+
+  .know-section .left-know .head{
+    font-size: 26px;
+    text-align:center;
+  }
+
+  .know-section .left-know .info{
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+  .know-section .left-know .info p{
+    font-size:22px;
+  }
+
+  .know-section .right-know{
+    width:100%;
+  }
+
+  .know-section .right-know .student{
+    height:336px;
+  }
+}
