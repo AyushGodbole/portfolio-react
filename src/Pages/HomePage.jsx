@@ -4,7 +4,6 @@ import About from './About';
 import Know from './Know';
 import MainSection from './MainSection';
 import Navbar from './Navbar';
-import Skills from './Skills';
 import Pageloader from '../Loader/Pageloader.jsx';
 
 function Homepage(){
@@ -29,7 +28,6 @@ function Homepage(){
                     <MainSection />
                     <About />
                     <Know />
-                    <Skills />
                 </section>
             </section>
         )
