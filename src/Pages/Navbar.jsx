@@ -49,7 +49,7 @@ function Navbar(){
                 <li>
                     <div className='tabs'>
                         <AiOutlineFundProjectionScreen/>
-                        <Link to={'projects'} spy={true} smooth={true} offset={-100} duration={500}>Projects</Link>
+                        <Link to={'skill'} spy={true} smooth={true} offset={-100} duration={500}>Projects</Link>
                     </div>
                 </li>
                 <li>

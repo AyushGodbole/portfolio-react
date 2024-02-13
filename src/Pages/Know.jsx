@@ -46,53 +46,53 @@ function Know(){
         </section>
 
         <section className="skills py-36 px-28 text-white flex flex-col gap-8">
-            <h1 className="head text-4xl text-center">Profession <span className=" text-[#4444ef]">Skillset</span></h1>
+            <h1 className="head text-4xl text-center" id="skill">Professional <span className=" text-[#4444ef]">Skillset</span></h1>
             <div class="container">
                 <div class="cont">
-                    <SiC/>
+                    <SiC className="images"/>
                 </div>
                 <div class="cont">
-                    <CgCPlusPlus/>
+                    <CgCPlusPlus className="images"/>
                 </div>
                 <div class="cont">
-                    <AiFillHtml5/>
+                    <AiFillHtml5 className="images"/>
                 </div>
                 <div class="cont">
-                    <SiCss3/>
+                    <SiCss3 className="images"/>
                 </div>
                 <div class="cont">
-                    <DiJavascript1/>
-                </div>
-
-
-                <div class="cont">
-                    <DiMongodb/>
-                </div>
-                <div class="cont">
-                    <SiExpress/>
-                </div>
-                <div class="cont">
-                    <DiReact/>
-                </div>
-                <div class="cont">
-                    <DiNodejs/>
-                </div>
-                <div class="cont">
-                    <SiNextdotjs/>
+                    <DiJavascript1 className="images"/>
                 </div>
 
 
                 <div class="cont">
-                    <SiFirebase/>
+                    <DiMongodb className="images"/>
                 </div>
                 <div class="cont">
-                    <FaGit/>
+                    <SiExpress className="images"/>
                 </div>
                 <div class="cont">
-                    <FaGithub/>
+                    <DiReact className="images"/>
                 </div>
                 <div class="cont">
-                    <DiPython/>
+                    <DiNodejs className="images"/>
+                </div>
+                <div class="cont">
+                    <SiNextdotjs className="images"/>
+                </div>
+
+
+                <div class="cont">
+                    <SiFirebase className="images"/>
+                </div>
+                <div class="cont">
+                    <FaGit className="images"/>
+                </div>
+                <div class="cont">
+                    <FaGithub className="images"/>
+                </div>
+                <div class="cont">
+                    <DiPython className="images"/>
                 </div>
             </div>
         </section>
