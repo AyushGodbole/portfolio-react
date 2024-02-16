@@ -5,6 +5,7 @@ import Know from './Know';
 import MainSection from './MainSection';
 import Pageloader from '../Loader/Pageloader.jsx';
 import NewNavbar from './NewNavbar.jsx';
+import Project from './Project.jsx';
 
 function Homepage(){
 
@@ -29,6 +30,7 @@ function Homepage(){
                     <MainSection />
                     <About />
                     <Know />
+                    <Project/>
                 </section>
             </section>
         )

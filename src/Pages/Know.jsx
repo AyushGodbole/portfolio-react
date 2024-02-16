@@ -45,7 +45,7 @@ function Know(){
             </div>
         </section>
 
-        <section className="skills py-36 px-28 text-white flex flex-col gap-8">
+        <section className="skills pt-36 pb-[5rem] px-28 text-white flex flex-col gap-8">
             <h1 className="head text-4xl text-center" id="skill">Professional <span className=" text-[#4444ef]">Skillset</span></h1>
             <div class="container-one">
                 <div class="cont">
@@ -94,6 +94,40 @@ function Know(){
                 <div class="cont">
                     <DiPython className="images"/>
                 </div>
+            </div>
+        </section>
+
+
+
+        <section className="skills pb-36 px-28 text-white flex flex-col gap-8">
+            <h1 className="head text-4xl text-center" id="skill"><span className=" text-[#4444ef]">Tools </span>I use</h1>
+            <div class="container-one">
+                <div class="cont">
+                    <SiVisualstudiocode className="images"/>
+                </div>
+                <div class="cont">
+                    <SiLeetcode className="images"/>
+                </div>
+                <div class="cont">
+                    <SiCodechef className="images"/>
+                </div>
+                <div class="cont">
+                    <SiCodingninjas className="images"/>
+                </div>
+                <div class="cont">
+                    <SiGeeksforgeeks className="images"/>
+                </div>
+
+
+                <div class="cont">
+                    <SiSlack className="images"/>
+                </div>
+                <div class="cont">
+                    <SiPostman className="images"/>
+                </div>
+                {/* <div class="cont">
+                    <SiVercel className="images"/>
+                </div> */}
             </div>
         </section>
         </section>
