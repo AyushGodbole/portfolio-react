@@ -47,7 +47,7 @@ function Know(){
 
         <section className="skills py-36 px-28 text-white flex flex-col gap-8">
             <h1 className="head text-4xl text-center" id="skill">Professional <span className=" text-[#4444ef]">Skillset</span></h1>
-            <div class="container">
+            <div class="container-one">
                 <div class="cont">
                     <SiC className="images"/>
                 </div>

@@ -3,8 +3,8 @@ import '../../src//index.css';
 import About from './About';
 import Know from './Know';
 import MainSection from './MainSection';
-import Navbar from './Navbar';
 import Pageloader from '../Loader/Pageloader.jsx';
+import NewNavbar from './NewNavbar.jsx';
 
 function Homepage(){
 
@@ -24,7 +24,8 @@ function Homepage(){
     return loading ? <Pageloader /> : (
             <section className="homepage text-white h-screen" id='home'>
                 <section className='page1'>
-                    <Navbar />
+                    {/* <Navbar /> */}
+                    <NewNavbar/>
                     <MainSection />
                     <About />
                     <Know />

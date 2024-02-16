@@ -13,6 +13,8 @@ import {CgGitFork , CgFileDocument} from 'react-icons/cg'
 // import { Link } from 'react-scroll';
 
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import Hamburger from 'hamburger-react';
+// import Hamburger from 'hamburger-react';
 
 function Navbar(){
 
@@ -33,6 +35,11 @@ function Navbar(){
     return (
         <nav className={scroll ? 'navbar-scroll flex-wrap top-0 flex justify-between px-32 py-5 w-full bg-fixed fixed' : 'navbar flex-wrap py-5 flex top-0 justify-between px-32 w-full bg-fixed fixed'}>
             <Link to={'/'} spy={true} smooth={true} offset={50} duration={500} className=' text-2xl'>AG |</Link>
+
+            <div className='ham_menu hidden'>
+                <Hamburger/>
+            </div>
+
             <ul className='list flex items-center justify-between w-[46%] text-[21px]'>
                 <li>
                     <div className='tabs'>
